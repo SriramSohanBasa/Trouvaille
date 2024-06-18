@@ -1,0 +1,67 @@
+#about {
+    margin: 50px;
+    display: flex; /* Using flexbox for alignment */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+}
+
+/* about.css */
+
+/* General Styles */
+.about {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center; /* Center align text */
+    max-width: 1000px; /* Increased max-width for a wider container */
+    margin: auto; /* Center the container */
+}
+
+/* Section Titles */
+.about h1,
+.about h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif; /* Distinctive font */
+}
+
+.about h1 {
+    font-size: 2.5em; /* Slightly larger size */
+    font-weight: bold;
+}
+
+.about h2 {
+    font-size: 2em;
+}
+
+/* Paragraph Styling */
+.about p {
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+}
+
+/* Strong Text Emphasis */
+.about strong {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about h1 {
+        font-size: 2em;
+    }
+
+    .about h2 {
+        font-size: 1.5em;
+    }
+}

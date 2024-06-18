@@ -1,0 +1,18 @@
+import express from "express";
+import {
+  createBooking,
+  getAllBooking,
+  getBooking,
+} from "../controllers/bookingController.js";
+
+import { adminAuth, userAuth } from "../utils/verifyToken.js";
+
+const router = express.Router();
+
+
+//giving URL routes for bookings, such as create and get
+router.post("/", userAuth, createBooking);
+router.get("/:id", userAuth, getBooking);
+router.get("/", adminAuth, getAllBooking);
+
+export default router;
